@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+/*General Styles*/
+:root{
+    --main-color: rgb(23, 109, 167);
+    --secondary-color: rgb(3, 190, 119);
+    --bg-color: rgb(40, 40, 40);
+    --bg-secondary-color:rgb(35, 35, 35);
+    --text-color:rgb(211, 211, 211);
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background: -webkit-linear-gradient(30deg, rgb(20, 17, 25) 18%, rgb(56, 50, 43) 80%, rgb(57, 50, 45) 100%);
+    background: -o-linear-gradient(30deg, rgb(20, 17, 25) 18%, rgb(56, 50, 43) 80%, rgb(57, 50, 45) 100%);
+    background: -ms-linear-gradient(30deg, rgb(20, 17, 25) 18%, rgb(56, 50, 43) 80%, rgb(57, 50, 45) 100%);
+    background: -moz-linear-gradient(30deg, rgb(20, 17, 25) 18%, rgb(56, 50, 43) 80%, rgb(57, 50, 45) 100%);
+    background: linear-gradient(60deg, rgb(20, 17, 25) 18%, rgb(56, 50, 43) 80%, rgb(57, 50, 45) 100%);
+    background-attachment: fixed;
+    margin: 0px;
+}
+.btn-container{
+    position: relative;
+    transform: translate(0px,10px);
+}
+#login{
+    position: absolute;
+    margin-top: 20px;
+    right: 20%;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-shadow: 1px 1px 0px #3d3d3d;
+    padding: 10px 35px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, var(--secondary-color), var(--main-color));
+    background-size: 0;
+    background-repeat: no-repeat;
+    border-image: linear-gradient(to right,var(--secondary-color), var(--main-color));
+    border-image-slice: 1;
+    border-image-width: 5px;
+    transition: all 0.5s ease;
+}
+#login:hover{
+    background-size: 100%;
+}
+
+/*Login Form*/
+.login-form{
+    position: relative;
+    top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    font-size: 1.1rem;
+    padding: 100px;
+    border-style: groove;
+    border-color: var(--secondary-color);
+    border-radius: 10%;
+}
+.icon-container{
+    position: relative;
+    font-size: 50px;
+    color: var(--secondary-color);
+    top: -50px;
+    right: -70px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: all ease .3s;
+}
+.form-check{
+    margin-top: 20px;
+}
+.form-control{
+    color: var(--bg-secondary-color);
+}
+.form-group{
+    color: var(--text-color);
+    transition: .3s;
+}
+.form-group:hover{
+    color: var(--secondary-color);
+}
