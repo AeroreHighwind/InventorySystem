@@ -12,4 +12,15 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  menuClick():void{
+    const navUl = document.getElementById('navUL');
+      if (navUl.style.display === 'none'){
+        navUl.style.display ='flex';
+        navUl.style.flexDirection='column';
+      }
+      else
+      navUl.style.display ='none';
+    
+    
+  }
 }
