@@ -17,10 +17,19 @@ export class NavBarComponent implements OnInit {
       if (navUl.style.display === 'none'){
         navUl.style.display ='flex';
         navUl.style.flexDirection='column';
+        navUl.style.animation = 'fadeIn 1s forwards'
       }
-      else
-      navUl.style.display ='none';
+      else{
+        navUl.style.animation = 'fadeOut .8s forwards';
+        setTimeout(()=> {
+          navUl.style.display = 'none';
+       }
+       ,500);
+        
+      }
+      
     
     
   }
+
 }
