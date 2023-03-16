@@ -10,6 +10,7 @@ export class NavBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    //this.hide();
   }
 
   menuClick():void{
@@ -26,10 +27,11 @@ export class NavBarComponent implements OnInit {
        }
        ,500);
         
-      }
-      
-    
-    
+      }    
   }
 
+  hide():void{
+    const navUl = document.getElementById('navUL');
+    navUl.style.display='none';
+  }
 }

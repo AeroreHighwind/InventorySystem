@@ -28,48 +28,4 @@ h1{
 }
 
 /*Table*/
-.product-grid, .table-names, .table-name{
-    border-style: solid;
-    border-color: var(--secondary-color);
-}
-.table-names{
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-}
-.add-container{
-    position: relative;
-    background-color: red;
-}
-.icon-container{
-    position: absolute;
-    left: 0;
-    padding: 3px 8px 3px 8px;
-    font-size: 25px;
-    background-color: var(--secondary-color);
-    border-radius: 100%;
-}
 
-.button-container{
-    position: absolute;
-    display: inline-block;
-    max-height: 35px;
-}
-.button-container button{
-    width: 35px;
-    height: 35px;
-    padding: 10px;
-    color: var(--text-color);
-    font-size: 20px;
-    border: 0;
-    background-color: transparent;
-    transition: .1s;
-}
-.button-container button:hover{
-    width: 35px;
-    height: 35px;
-    color: var(--secondary-color-color);
-    font-size: 22px;
-}
