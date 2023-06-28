@@ -20,7 +20,7 @@
   max-height: 80%;
   overflow-y: auto;
   text-align: center;
-  animation: popUpAnim 1s ;
+  animation: popUpAnimShow 1s ;
 }
 
 #popup h2 {
@@ -49,11 +49,20 @@
   display: block;
 }
 
-@keyframes popUpAnim{
+
+@keyframes popUpAnimShow{
   from{
     opacity: 0;
   }
   to{
     opacity: 100%;
+  }
+}
+@keyframes popUpAnimHide{
+  from{
+    opacity: 100%;
+  }
+  to{
+    opacity: 0;
   }
 }

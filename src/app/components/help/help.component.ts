@@ -11,16 +11,17 @@ export class HelpComponent implements OnInit {
 
   ngOnInit(): void {
     const openButton = document.getElementById('open-popup');
-const closeButton = document.getElementById('close-popup');
-const popupOverlay = document.getElementById('popup-overlay');
+    const closeButton = document.getElementById('close-popup');
+    const popupOverlay = document.getElementById('popup-overlay');
 
-openButton.addEventListener('click', function() {
-  popupOverlay.classList.add('show');
-});
+    openButton.addEventListener('click', function () {
+      popupOverlay.classList.add('show');
+    });
 
-closeButton.addEventListener('click', function() {
-  popupOverlay.classList.remove('show');
-});
+    closeButton.addEventListener('click', function () {
+      popupOverlay.classList.remove('show');
+      
+    });
   }
 
 }
