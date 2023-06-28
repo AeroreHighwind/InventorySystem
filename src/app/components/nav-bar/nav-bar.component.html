@@ -1,21 +1,25 @@
 <div class="container navBar" id="navBar">
-    <button (click)="menuClick()" class="menu" id="menu" >
-        <div class="icon-container">
-          <i class="bi bi-list"></i>
-        </div>
-    </button>
-    <ul id="navUL">
-      <li>
-        <span><a href="#">Crear Inventario</a></span>
-      </li>
-      <li>
-        <span><a href="#">Inventarios <br> Anteriores </a></span>
-      </li>
-      <li>
-        <span><a href="#">Ayuda</a></span>
-      </li>
-      <li>
-        <span><a href="#"></a></span>
-      </li>
-    </ul>
-  </div>
+  <button (click)="navBarSwitch()" class="menu">
+    <i class="bi bi-list"></i>
+  </button>
+  <ul *ngIf="getSwitchStatus()" id="navUL">
+    <li>
+      <span><a href="#">Crear <br>
+        Inventario</a></span>
+    </li>
+    <li>
+      <span
+        ><a href="#"
+          >Inventarios <br />
+           Anteriores
+        </a></span
+      >
+    </li>
+    <li>
+      <span><a href="#">Ayuda</a></span>
+    </li>
+    <li>
+      <span><a href="#"></a></span>
+    </li>
+  </ul>
+</div>

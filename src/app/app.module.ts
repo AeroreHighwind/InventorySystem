@@ -20,7 +20,7 @@ import { HelpComponent } from './components/help/help.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -33,9 +33,7 @@
     border-radius: 20%;
     transition: .3s;
 }
-.menu:hover{
-    font-size: 28px;
-}
+
 
 @keyframes fadeIn{
     from{

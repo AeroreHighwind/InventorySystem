@@ -7,31 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  private isActive: boolean;
 
   ngOnInit(): void {
-    //this.hide();
+   this.isActive = true;
   }
 
-  menuClick():void{
-    const navUl = document.getElementById('navUL');
-      if (navUl.style.display === 'none'){
-        navUl.style.display ='flex';
-        navUl.style.flexDirection='column';
-        navUl.style.animation = 'fadeIn 1s forwards'
-      }
-      else{
-        navUl.style.animation = 'fadeOut .8s forwards';
-        setTimeout(()=> {
-          navUl.style.display = 'none';
-       }
-       ,500);
-        
-      }    
+  public navBarSwitch():void{
+    this.isActive = !this.isActive;
   }
 
-  hide():void{
-    const navUl = document.getElementById('navUL');
-    navUl.style.display='none';
+  public getSwitchStatus():boolean{
+    return this.isActive;
   }
 }
