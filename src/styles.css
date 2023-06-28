@@ -4,3 +4,18 @@
 
 /*General Styles*/
 
+:root{
+    --main-color: rgb(23, 109, 167);
+    --secondary-color: rgb(3, 190, 119);
+    --bg-color: #121212;
+    --bg-secondary-color:rgb(44, 34, 34);
+    --text-color:rgb(211, 211, 211);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(33,33,33,1) 0%, rgba(18,17,17,1) 100%);
+    background-attachment: fixed;
+    margin: 0px;
+}
