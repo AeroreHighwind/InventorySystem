@@ -7,21 +7,17 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class HelpComponent implements OnInit {
 
+  private isActive: boolean;
   constructor() { }
 
   ngOnInit(): void {
-    const openButton = document.getElementById('open-popup');
-    const closeButton = document.getElementById('close-popup');
-    const popupOverlay = document.getElementById('popup-overlay');
-
-    openButton.addEventListener('click', function () {
-      popupOverlay.classList.add('show');
-    });
-
-    closeButton.addEventListener('click', function () {
-      popupOverlay.classList.remove('show');
-      
-    });
+    this.isActive = false;
+  }
+  public toggleHelp():void{
+    this.isActive = !this.isActive;
   }
 
+  public getIsActive():boolean{
+    return this.isActive;
+  }
 }

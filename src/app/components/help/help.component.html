@@ -1,5 +1,6 @@
-<button id="open-popup">Open Popup</button>
-<div id="popup-overlay">
+<button class="btn btn-primary mt-5" (click)="toggleHelp()">Open Popup</button>
+
+<div *ngIf="getIsActive()" id="popup-overlay" class="show">
   <div id="popup">
     <h2>Instructiones</h2>
     <div class="content" id="1">
@@ -24,6 +25,6 @@
       <li>Si lo desea, puede ver todos los inventarios a la vez seleccionando "Mostrar todos".</li>
     </ol>
     </div>
-    <button id="close-popup">Close</button>
+    <button class="btn btn-primary" id="close-popup" (click)="toggleHelp()">Close</button>
   </div>
 </div>
