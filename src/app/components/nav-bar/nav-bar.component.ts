@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HelpComponent } from '../help/help.component';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
 
   private isActive: boolean;
+  private helpComponent:HelpComponent;
 
   ngOnInit(): void {
    this.isActive = true;
+   
   }
 
   public navBarSwitch():void{
@@ -19,5 +22,9 @@ export class NavBarComponent implements OnInit {
 
   public getSwitchStatus():boolean{
     return this.isActive;
+  }
+
+  public clickHelp():void{
+    this.helpComponent.toggleHelp();
   }
 }

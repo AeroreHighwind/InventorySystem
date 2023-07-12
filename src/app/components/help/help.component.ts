@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { ToggleService } from 'src/app/services/toggle.service';
 
 @Component({
   selector: 'app-help',
@@ -7,17 +8,18 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class HelpComponent implements OnInit {
 
-  private isActive: boolean;
-  constructor() { }
+  constructor(private toggleService:ToggleService) { }
 
   ngOnInit(): void {
-    this.isActive = false;
-  }
-  public toggleHelp():void{
-    this.isActive = !this.isActive;
+    
   }
 
-  public getIsActive():boolean{
-    return this.isActive;
+  public toggleHelp(): void {
+    this.toggleService.toggle();
   }
+  
+  public isActive():boolean{
+    return this.toggleService.getIsActive();
+  }
+
 }

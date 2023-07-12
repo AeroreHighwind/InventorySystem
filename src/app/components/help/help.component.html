@@ -1,6 +1,6 @@
 <button class="btn btn-primary mt-5" (click)="toggleHelp()">Open Popup</button>
 
-<div *ngIf="getIsActive()" id="popup-overlay" class="show">
+<div *ngIf="isActive()" id="popup-overlay">
   <div id="popup">
     <h2>Instructiones</h2>
     <div class="content" id="1">
