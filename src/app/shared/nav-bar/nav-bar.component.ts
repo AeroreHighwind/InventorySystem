@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HelpComponent } from '../help/help.component';
+import { HelpComponent } from 'src/app/shared/help/help.component';
 
 @Component({
-  selector: 'app-nav-bar',
+  selector: 'shared-navbar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css']
 })

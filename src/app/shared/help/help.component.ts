@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { ToggleService } from 'src/app/services/toggle.service';
+import { ToggleService } from '../services/toggle.service';
+
 
 @Component({
-  selector: 'app-help',
+  selector: 'shared-help',
   templateUrl: './help.component.html',
   styleUrls: ['./help.component.css']
 })

@@ -3,24 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { TableComponent } from './components/table/table.component';
-import { HelpComponent } from './components/help/help.component';
+import { SharedModule } from './shared/shared.module';
+import { HomeModule } from './Home/home.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    LoginComponent,
-    NavBarComponent,
-    TableComponent,
-    HelpComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
+    HomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
